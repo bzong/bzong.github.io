@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Projects</title>
+		<style type="text/css" media="screen">@import url( style.css );</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="container" class="one-column" >
+				<div id="header">
+					<div id="caption">
+						<h1 id="title" style="color: white;">Bo Zong</h1>
+						<div id="tagline">NEC Laboratories America</div>
+					</div>
+					<div class="fixed"></div>
+
+				</div>
+				<div id="navigation">
+					<ul id="menus">
+  					  <li class="page_item">
+						  <a class="home" title="Home" href="index.html">Home</a>
+					  </li>
+  					  <li class="page_item">
+						  <a href="project.html">Projects</a>
+					  </li>
+  				  	  <li class="page_item">
+						  <a href="publication.html" title="Publications">Publications</a>
+					  </li>
+  					  <li class="page_item">
+						  <a href="index.html#news">News</a>
+					  </li>
+  				      <li class="page_item">
+						  <a href="index.html#contact" title = "Contact">Contact</a>
+					  </li>
+				    </ul>
+					<div class="fixed"></div>
+				</div>
+
+				<div id="content">
+					<div id="main">
+
+						<div class="post">
+							<h2>Overview</h2>
+							<div class="content">
+								<p>My research work is in the areas of machine learning, data mining, and data management.</p>
+								<p>
+									Machine Learning
+									<li><b>Graph Representation Learning</b></li>
+									<li><b>Complex Data Density Estimation</b></li>
+									<li><b>Multi-Modal Representation Learning</b></li>
+								</p>
+								<p>
+									Data Mining
+									<li><a href="#behavior"><b>Behavior Query Discovery in Temporal Graphs</b></a></li>
+									<li><a href="#alert"><b>Critical Alert Mining</b></a></li>
+									<li><a href="#cascade"><b>Inferring the Missing Structure in Information Cascades</b></a></li>
+								</p>
+								<p>
+									Data Management
+									<li><a href="#stream"><b>Query Placement in Distributed Stream Processing Systems</b></a></li>
+									<li><a href="#cloud"><b>Cloud Service Placement</b></a></li>
+									<li><a href="#pie"><b>Routing Optmization in Mobility Networks</b></a></li>
+									<li><a href="#sedge"><b>Large-Scale Graph Management</b></a></li>
+								</p>
+
+							</div>
+						</div>
+
+						<h3>========================================== <em>Before 2016</em> =========================================</h3>
+
+						<div class="post">
+							<a name=behavior></a>
+							<h2>Behavior Query Discovery in Temporal Graphs</h2>
+							<div class="content">
+								<table style="border: 0 none;" >
+									<tr>
+										<td style="border: 0 none;"><img width=120px src="img/cybersecurity.jpg" alt="cybersecurity"/></td>
+										<td style="border: 0 none;">
+											<p>System calls generated from computer systems form large-scale heterogeneous temporal graphs that capture the evolution of system activities over time. From this temporal graph, users can query known activity patterns related to system risks; however, these patterns are usually formed by primitive behaviors, such as remote-login, file compression, and so on, which cannot be directly found in the temporal graphs of basic system entities like processes, files, sockets, and pipes. To bridge the gap, we propose the idea of using discriminative sub-traces to represent primitive behaviors and build behavior queries, where the task of mining discriminative sub-traces is formulated as a temporal graph pattern mining problem. To overcome the mining speed issue, we leverage the temporal information in graphs to develop efficient pattern growth algorithms and prune search space with small overhead. Our mining algorithm is up to 90 times faster than the baselines, and the discovered behavior queries achieve high precision (97%) and recall (91%).</p>
+											<p><b>Collaborator</b>: <a href="http://www.nec-labs.com/" target="_blank"><b>NEC Lab America</b></a></p>
+											<p><b>Publication</b>
+												<li>
+													<b>Bo Zong</b>, Xusheng Xiao, Zhichun Li, Zhenyu Wu, Zhiyun Qian, Xifeng Yan, Ambuj K. Singh, and Guofei Jiang. <b><em>Behavior Query Discovery in System-Generated Temporal Graphs</em></b>, <b>VLDB'16</b> . [<a href="doc/vldb16-p325-zong.pdf" target="_blank"><b>pdf</b></a>] [<a href="doc/vldb16-full-paper.pdf" target="_blank"><b>full version</b></a>] [<a href="doc/vldb2016-talk.pdf" target="_blank"><b>slides</b></a>];
+												</li>
+											</p>
+										</td>
+									</tr>
+								</table>
+								[<a href="#top">top</a>]
+							</div>
+						</div>
+						
+						<div class="post">
+							<a name=alert></a>
+							<h2>Critical Alert Mining</h2>
+							<div class="content">
+								<table style="border: 0 none;" >
+									<tr>
+										<td style="border: 0 none;"><img width=120px src="img/nuclear-plant.gif" alt="alert"/></td>
+										<td style="border: 0 none;">
+											<p>Alerts serve as indicators of malfunction in system performance analysis. While complex systems nowadays could generate tens of thousands of alerts per day, users like system administrators cannot handle these alerts one by one. In this context, we propose critical alert mining that automatically discovers critical alerts from system monitor data and helps users focus on the critical ones instead of blindly checking alerts. In particular, we build a temporal graph that captures the dynamic dependencies among system alerts, and infer top critical alerts from the temporal graph by cost-effective algorithms. Our approach is up to 5, 000 times faster than the baselines, and we do discover critical alerts from real-life system monitor data.</p>
+											<p><b>Collaborator</b>: <a href="http://www.logicmonitor.com/" target="_blank"><b>LogicMonitor</b></a></p>
+											<p><b>Publication</b>
+												<li>
+													<b>Bo Zong</b>, Yinghui Wu, Jie Song, Ambuj K. Singh, Hasan Cam, Jiawei Han, and Xifeng Yan, <b><em>Towards Scalable Critical Alert Mining</em></b>, <b>KDD'14</b>. [<a href="doc/graph-causal-kdd14.pptx" target="_blank"><b>slides</b></a>] [<a href="doc/critical-alert-mining.pdf" target="_blank"><b>pdf</b></a>]
+												</li>
+											</p>
+										</td>
+									</tr>
+								</table>
+								[<a href="#top">top</a>]
+							</div>
+						</div>
+						
+						<div class="post">
+							<a name=stream></a>
+							<h2>Query Placement in Distributed Stream Processing Systems</h2>
+							<div class="content">
+								<table style="border: 0 none;" >
+									<tr>
+										<td style="border: 0 none;"><img width=120px src="img/stream.jpg" alt="stream"/></td>
+										<td style="border: 0 none;">
+											<p> In a distributed stream processing system, it is important to pack user-defined queries into servers such that network cost in the system is minimized and load balance is preserved. In this work, we model the subscription relations between queries and data sources as temporal bipartite graphs where query nodes can dynamically join or leave the graphs, and formulate the query placement task as a partitioning problem. Due to the NP-hardness of the problem, we propose online/offline approximation algorithms with performance guarantees as well as cost-effective heuristics. Our algorithms practically work well in a wide range of scenarios, and are adopted in Microsoft products.
+</p>
+											<p><b>Collaborator</b>: <a href="http://research.microsoft.com/" target="_blank"><b>Microsoft Research</b></a></p>
+											<p><b>Publication</b>
+												<li>
+													<b>Bo Zong</b>, Christos Gkantsidis, and Milan Vojnovic. <b><em>Herding "Small" Streaming Queries</em></b>, <b>DEBS'15</b>. [<a href="doc/debs-stream.pdf" target="_blank"><b>pdf</b></a>];
+												</li>
+												<li>
+													Milan Vojnovic, Christos Gkantsidis, <b>Bo Zong</b>. <b><em>Streaming Query Resource Control</em></b>, <b>US Patent</b>. [<a href="https://patentimages.storage.googleapis.com/9b/b0/3a/451191f334d106/US9819558.pdf" target="_blank"><b>link</b></a>].
+												</li>
+											</p>
+										</td>
+									</tr>
+								</table>
+								[<a href="#top">top</a>]
+							</div>
+						</div>
+						
+						<div class="post">
+							<a name=cloud></a>
+							<h2>Cloud Service Placement</h2>
+							<div class="content">
+								<table style="border: 0 none;" >
+									<tr>
+										<td style="border: 0 none;"><img width=120px src="img/datacenter.jpg" alt="stream"/></td>
+										<td style="border: 0 none;">
+											<p> Cloud datacenter provides a reliable way to share computation resources. In a cloud datacenter, a routine task is to place cloud services: find a set of servers to host a user-defined cloud service. It is challenging to place cloud services, as cloud services usually include topology and computation resource requirements, and the underlying datacenter is dynamically evolving over time. In this work, we formulate the cloud service placement problem as a subgraph matching problem where cloud datacenters are modeled as large temporal graphs and cloud services are represented as small query graphs. With the observation that available computation resources are highly dynamic in a datacenter but its structure is relatively stable, we develop a graph encoding scheme that decomposes graph structures and node/edge attributes in graphs. A flexible graph index is developed based on the encoding scheme to enable fast index search and update. The proposed graph index achieves up to 10 times speedup for subgraph search, and can process 5M updates per second.</p>
+											<p><b>Collaborator</b>: <a href="http://www.research.ibm.com/" target="_blank"><b>IBM Research</b></a></p>
+											<p><b>Publication</b>
+												<li>
+													<b>Bo Zong</b>, Ramya Raghavendra, Mudhakar Srivatsa, Xifeng Yan, Ambuj K. Singh, and Kang-Won Lee, <b><em>Cloud Service Placement via Subgraph Matching</em></b>, <b>ICDE'14</b>. [<a href="doc/icde14-talk.pptx" target="_blank"><b>slides</b></a>] [<a href="doc/dynamic-matching-icde14.pdf" target="_blank"><b>pdf</b></a>]
+												</li>
+												<li>
+													This work is included as a part of <a href="http://systemg.research.ibm.com/" target="_blank"><b>IBM System G</b></a> [<a href="http://systemg.research.ibm.com/analytics-matching.html" target="_blank"><b>link</b></a>].
+												</li>
+											</p>
+										</td>
+									</tr>
+								</table>
+								[<a href="#top">top</a>]
+							</div>
+						</div>
+						
+						<div class="post">
+							<a name=cascade></a>
+							<h2>Inferring the Missing Structure in Information Cascades</h2>
+							<div class="content">
+								<table style="border: 0 none;" >
+									<tr>
+										<td style="border: 0 none;"><img width=120px src="img/word-of-mouth.jpg" alt="cascade"/></td>
+										<td style="border: 0 none;">
+											<p> Information cascades are temporal graphs that model the traces of information propagation in online social media. On the one hand, they play vital roles in social science study as well as applications like online marketing. On the other hand, it is difficult to obtain complete structures for information cascades due to privacy policies and data noise. In this work, we aim to recover missing structures in cascades, and formulate this task as an optimization problem that searches the optimal way to connect cascade pieces subject to temporal constraints in cascades and structural constraints in online social media. Despite the NP-hardness of this problem, we propose efficient approximation algorithms with performance guarantees. Our approach significantly outperforms the baselines on recovering missing structures in real-life cascades.</p>
+											<p><b>Publication</b>
+												<li>
+													<b>Bo Zong</b>, Yinghui Wu, Ambuj K. Singh, and Xifeng Yan, <b><em>Inferring the Underlying Structure of Information Cascades</em></b>, <b>ICDM'12</b>. [<a href="doc/cascade-inference-icdm12.pptx" target="_blank"><b>slides</b></a>] [<a href="doc/cascade-inference-icdm12.pdf" target="_blank"><b>pdf</b></a>]
+												</li>
+											</p>
+										</td>
+									</tr>
+								</table>
+								[<a href="#top">top</a>]
+							</div>
+						</div>
+						
+						<div class="post">
+							<a name=pie></a>
+							<h2>Routing Optmization in Mobility Networks</h2>
+							<div class="content">
+								<table style="border: 0 none;" >
+									<tr>
+										<td style="border: 0 none;"><img width=120px src="img/mobile.jpg" alt="mobile"/></td>
+										<td style="border: 0 none;">
+											<p> In a network of mobile objects like vehicle networks, it is challenging to spread information in a cost-effective way, due to the dynamic changes in network topology. In this work, we model a mobility network as a temporal graph, and formulate the information routing problem as a node reachability problem. Since an information routing request could involve millions of reachability queries, it is vital to efficiently process the queries for real-time response. To achieve this goal, we build a graph index by compressing temporal graphs into directed acyclic graphs, and process reachability queries in a batch via the graph index. Our method can dynamically find the optimal routing strategy for an incoming request in a few seconds, and the proposed graph index brings up to 100 times speedup to the process of searching optimal routing strategies.</p>
+											<p><b>Publication</b>
+												<li>
+													Misael Mongiovi, Konstantinos Psounis, Ambuj K. Singh, Xifeng Yan, and <b>Bo Zong</b>, <b><em> Efficient Multicasting for Delay Tolerant Networks using Graph Indexing</em></b>, <b>INFOCOM'12</b>. (order authors alphabetically) [<a href="doc/network-mobility-infocom12.pdf" target="_blank"><b>pdf</b></a>]
+												</li>
+											</p>
+										</td>
+									</tr>
+								</table>
+								[<a href="#top">top</a>]
+							</div>
+						</div>
+						
+						<div class="post">
+							<a name=sedge></a>
+							<h2>Large-Scale Graph Management</h2>
+							<div class="content">
+								<table style="border: 0 none;" >
+									<tr>
+										<td style="border: 0 none;"><img width=120px src="img/sedge_logo.jpg" alt="sedge"/></td>
+										<td style="border: 0 none;">
+											<p> Sedge is a software framework that supports large scale graph processing. Essentially, Sedge is inspired by Google’s Pregel. The Pregel like model is simply blind of intensive inter-machine communication and unbalanced workload. Sedge adds functions to support overlapping partitions, with the goal to process local graph queries faster. Sedge is able to minimize inter-machine communication by dynamically adapting graph partitions to query workload change, as well as data change.</p>
+											<p><b>Publication</b>
+												<li>
+													Shengqi Yang, Xifeng Yan, <b>Bo Zong</b>, and Arijit Khan, <b><em>Towards Effective Partition Management for Large Graphs</em></b>, <b>SIGMOD'12</b>. [<a href="doc/sedge-sigmod12.pdf" target="_blank"><b>pdf</b></a>]
+												</li>
+												<li>
+													More details about Sedge (including source code) can be accessed via [<a href="http://grafia.cs.ucsb.edu/sedge/index.html" target="_blank"><b>link</b></a>]
+												</li>
+											</p>
+										</td>
+									</tr>
+								</table>
+								[<a href="#top">top</a>]
+							</div>
+						</div>
+
+						
+					</div>
+					<div class="fixed"></div>
+				</div>
+
+
+				<div id="footer">
+					<div id="copyright">
+						Copyright &copy; Bo Zong.  Last updated:
+						<script type="text/javascript">
+						<!--
+						var LastUpdated = "2017-11-22";
+						document.writeln (LastUpdated);
+						-->
+						</script>
+					</div>
+					<div id="themeinfo">
+						Adapted from a WordPress Theme by <a href="http://www.neoease.com/">NeoEase</a>. Valid <a href="http://validator.w3.org/check?uri=referer">XHTML 1.1</a> and <a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">CSS 3</a>.	
+					</div>
+				</div>
+			</div>
+		</div>
+		<h1 style="font-size:50%;color:#BEC3C6;">keywords: Bo Zong, Graph learning, Deep Learning, Graph Neural Networks, Big Data, Big Graph, Graph analytics, Data Mining, Graph Mining, Dynamic Graphs, Network Dynamics, Temporal Graphs</h1>
+	</body>
+</html>
+
+
+
+
