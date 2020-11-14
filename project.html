@@ -71,15 +71,30 @@
 										<td style="border: 0 none;"><img width=120px src="img/neural-reasoning.jpg" alt="graph_learning"/></td>
 										<td style="border: 0 none;">
 											<p>
-												To be added.
+												<b>Why do we need graph representation learning?</b> Graph is a general data structure used to encode relational data, such as online social networks, syscall logs in cybersecurity, and many others. Intuitively, from graphs, one could derive contextual features for better decision making. For example, instead of predicting a user's interest solely based on the data of this user, one may look into his/her contextual information, which is the data from this user's close friends or friends' friends in this case. By jointly considering personal and contextual features, one could make more accurate prediction even when a specific user's data are sparse. With the significant value in contextual features, graph representation learning is to learn vector representations for individual nodes, edges, or graphs that encode salient and discriminative contextual features for downstream analytical tasks.
+											</p>
+											<p>
+												<b>Why is it hard to learn graph representations?</b> The key barrier is the difficulty in defining contextual features. In general, contexts could be something vague, and the exact forms could be task-specific, or even case-specific. Traditional methods attempt to address this challenge by heavey feature engineering. For example, one could suggest a triangle substructure is critical, and the count of triangles within one-hop of a node as one of this node's contextual features. While it is impractical to enumerate all combinatorial possibilities, the resulting performance could be limited as pre-defined features may not even be relevant with regard to a specific task. In 2015, the question in my mind was <em>given labels of a specific task, why don't we let machines automatically figure out which features are informative for prediction?</em> In short, it is the irregular structure and permutation invariance requirement that make it difficult to adapt the learning methods back then for graph representation learning.
+											</p>
+											<p>
+												<b>My perspectives.</b> My research touches three dimensions of graph representation learning techniques: functionality, generalization, and interpretation. 
+												<li>
+													<b>Functionality</b>. [AAAI'18] [CIKM'18] [WSDM'21 A] [ICLR'20] [ICDM'19 A]
+												</li>
+												<li>
+													<b>Generalization</b>. [KDD'18] [ICML'20] [WSDM'21 B] [ECML'20]
+												</li>
+												<li>
+													<b>Interpretation</b>. [NeurIPS'20] [ICDM'19 B]
+												</li>
 											</p>
 											<p>
 												<b>Publications</b>
 												<li>
-													<b>[WSDM'21]</b> <em>Modeling Context Pair Interaction for Pairwise Tasks on Graphs</em>. [<b>pdf</b>]
+													<b>[WSDM'21 A]</b> <em>Modeling Context Pair Interaction for Pairwise Tasks on Graphs</em>. [<b>pdf</b>]
 												</li>
 												<li>
-													<b>[WSDM'21]</b> <em>Learning to Drop: Robust Graph Neural Network via Topological Denoising</em>. [<a href="doc/wsdm21-ltd.pdf" target="_blank"><b>pdf</b></a>]
+													<b>[WSDM'21 B]</b> <em>Learning to Drop: Robust Graph Neural Network via Topological Denoising</em>. [<a href="doc/wsdm21-ltd.pdf" target="_blank"><b>pdf</b></a>]
 												</li>
 												<li>
 													<b>[ICML'20]</b> <em>Robust Graph Representation Learning via Neural Sparsification</em>. [<a href="doc/icml-20.pdf" target="_blank"><b>pdf</b></a>]
@@ -94,10 +109,10 @@
 													<b>[ECML'20]</b> <em>Node Classification in Temporal Graphs through Stochastic Sparsification and Temporal Structural Convolution</em>. [<a href="doc/sub_379.pdf" target="_blank"><b>pdf</b></a>]
 												</li>
 												<li>
-													<b>[ICDM'19]</b> <em>Self-Attentive Attributed Network Embedding Through Adversarial Learning</em>. [<a href="doc/nettension19.pdf" target="_blank"><b>pdf</b></a>]
+													<b>[ICDM'19 A]</b> <em>Self-Attentive Attributed Network Embedding Through Adversarial Learning</em>. [<a href="doc/nettension19.pdf" target="_blank"><b>pdf</b></a>]
 												</li>
 												<li>
-													<b>[ICDM'19]</b> <em>Adaptive Neural Network for Node Classification in Dynamic Networks</em>. [<a href="doc/ICDM19_AdaNN.pdf" target="_blank"><b>pdf</b></a>]
+													<b>[ICDM'19 B]</b> <em>Adaptive Neural Network for Node Classification in Dynamic Networks</em>. [<a href="doc/ICDM19_AdaNN.pdf" target="_blank"><b>pdf</b></a>]
 												</li>
 												<li>
 													<b>[CIKM'18]</b> <em>TGNet: Learning to Rank Nodes in Temporal Graphs</em>. [<a href="doc/p97-song.pdf" target="_blank"><b>pdf</b></a>]
